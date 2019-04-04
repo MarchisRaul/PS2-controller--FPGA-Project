@@ -1,0 +1,9 @@
+735
+~E 1 "./src/Bist+Reg.vhd" 7 bistsireg
+~A 1 "./src/Bist+Reg.vhd" 17 arch_bist
+~E 1 "./src/Afisare.vhd" 6 afisare
+~A 1 "./src/Afisare.vhd" 17 arh_seg
+~E 1 "./src/Divizor.vhd" 6 divizor_seg
+~A 1 "./src/Divizor.vhd" 11 arch_div_seg
+~E 1 "./src/Unity.vhd" 7 legare_totala
+~A 1 "./src/Unity.vhd" 16 arch_unity

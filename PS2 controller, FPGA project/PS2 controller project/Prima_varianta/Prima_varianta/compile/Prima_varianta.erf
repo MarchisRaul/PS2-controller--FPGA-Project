@@ -1,0 +1,5 @@
+MESSAGE "File: d:\facultate\Programe\Prima_varianta\Prima_varianta\src\Unity.vhd" 
+MESSAGE "Compile Entity "legare_totala"" 
+MESSAGE "Entity `legare_totala' has been skipped - no difference detected." 
+MESSAGE "Compile Architecture "arch_unity" of Entity "legare_totala"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

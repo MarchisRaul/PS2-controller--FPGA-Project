@@ -1,0 +1,18 @@
+elbread.dll ver. 1.0.5.365 Thu Mar 21 20:14:52 2019
+
+
+------------------------------------------
+Entity     | Architecture | Library     
+------------------------------------------
+bistsireg  | arch_bist    | Prima_varianta
+------------------------------------------
+
+-----------------------------
+Package             | Library
+-----------------------------
+standard            | std
+std_logic_1164      | ieee
+std_logic_arith     | ieee
+std_logic_unsigned  | ieee
+numeric_std         | ieee
+-----------------------------

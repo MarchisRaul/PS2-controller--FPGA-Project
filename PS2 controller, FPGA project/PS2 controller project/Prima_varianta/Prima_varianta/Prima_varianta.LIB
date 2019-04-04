@@ -1,0 +1,56 @@
+timestamp=1526650114356
+
+[afisare]
+A/arh_seg=A/ARH_SEG 21|./src/Afisare.vhd|17|1*538202
+B/arh_seg=3*414267
+H/arh_seg=0*601483
+R=./src/Afisare.vhd|6
+S/afisare=S/Afisare 40|0|2*0
+V=0*608353
+
+[bistsireg]
+A/arch_bist=21|./src/Bist+Reg.vhd|17|1*534809
+B/arch_bist=3*411414
+H/arch_bist=0*597978
+R=./src/Bist+Reg.vhd|7
+S/bistsireg=S/bistSIreg 40|0|2*3077
+V=0*556806
+
+[divizor_seg]
+A/arch_div_seg=A/Arch_Div_SEG 21|./src/Divizor.vhd|11|1*529662
+B/arch_div_seg=3*410330
+H/arch_div_seg=0*583937
+R=./src/Divizor.vhd|6
+V=0*11534
+
+[legare_totala]
+A/arch_unity=21|./src/Unity.vhd|16|1*544468
+H/arch_unity=0*610684
+R=./src/Unity.vhd|7
+V=0*596192
+
+[~A]
+./compile/legare_totala.vhd~legare_totala=0*588313*588797
+./src/Afisare.vhd~ARH_SEGAfisare=0*603747*607097
+./src/Afisare.vhd~Afisare=0*600911*601418
+./src/Bist+Reg.vhd~arch_bistbistSIreg=0*599274*600834
+./src/Bist+Reg.vhd~bistSIreg=0*552450*552895
+./src/Divizor.vhd~Arch_Div_SEGDivizor_SEG=0*584594*584902
+./src/Divizor.vhd~Divizor_SEG=0*9573*9876
+./src/Unity.vhd~arch_unitylegare_totala=0*615985*617077
+./src/Unity.vhd~legare_totala=0*594648*595100
+ModifyID=735
+Version=73
+
+[~MFT]
+0=777|0Prima_varianta.mgf|617077|588733
+1=208|1Prima_varianta.mgf|544468|527662
+2=1|2Prima_varianta.mgf|3077|0
+3=194|3Prima_varianta.mgf|414267|410330
+
+[~U]
+afisare=11|0*607169|0*607529|0x3
+bistsireg=11|0*555909|0*556203|0x3
+divizor_seg=Divizor_SEG 11|0*10991|0*11162
+legare_totala=11|0*595169|0*595498
+

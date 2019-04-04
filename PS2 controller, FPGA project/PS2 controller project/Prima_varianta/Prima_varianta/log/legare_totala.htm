@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - legare_totala.bde</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="D:\facultate\Programe\\Flows\Res\default.bmp">
+<FONT FACE="Verdana" SIZE=2>
+
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - legare_totala.bde</H2>
+Created on Fri May 18 16:25:04 2018
+
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking&nbsp;file&nbsp;'d:\facultate\Programe\Prima_varianta\Prima_varianta\src\legare_totala.bde'.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;loaded&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','d:\\facultate\\Programe\\Prima_varianta\\Prima_varianta\\src\\legare_totala.bde','','-errorid=9');">Unconnected&nbsp;terminal&nbsp;'test(7:0)'.</SPAN><BR>
+<SPAN class=Info1>File&nbsp;checked&nbsp;in&nbsp;0&nbsp;seconds.</SPAN><BR>
+<SPAN class=Warn1>legare_totala.bde&nbsp;-&nbsp;0&nbsp;error(s),&nbsp;1&nbsp;warning(s)</SPAN><BR>
+</FONT>
+       
+        
+<FONT FACE="Verdana" SIZE=2>
+<BR><BR>
+<HR NOSHADE COLOR="#008080"><H3>Conversion Functions Log</H3>
+Generation process begin...<br><br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','d:\\facultate\\Programe\\Prima_varianta\\Prima_varianta\\src\\legare_totala.bde','','-errorid=2');">In instance 'afisare_placuta':'Afisare' at pin 'IESIRE_BITI0(7:0)' function to_stdlogicvector() added.</span><br>
+<dd>
+Function 'to_stdlogicvector' used.<br>
+<dd>
+Function '' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','d:\\facultate\\Programe\\Prima_varianta\\Prima_varianta\\src\\legare_totala.bde','','-errorid=2');">In instance 'afisare_placuta':'Afisare' at pin 'IESIRE_BITI1(7:0)' function to_stdlogicvector() added.</span><br>
+<dd>
+Prototype of this function already exists.<br>
+<dd>
+Function 'to_stdlogicvector' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<span class=Warn onmouseup="OpenPlugIn('Aldec.BDE.7','0','d:\\facultate\\Programe\\Prima_varianta\\Prima_varianta\\src\\legare_totala.bde','','-errorid=4');">In instance 'preluare_cod':'bistSIreg' at pin 'PARITATE_CORECTA' function to_stdulogic() added.</span><br>
+<dd>
+Function 'to_stdulogic' used.<br>
+<dd>
+Function '' used.<br>
+<dd>
+Function '' used.<br>
+<br>
+Generation process end.<br>
+Conversion functions added: 3<br>
+</FONT>
+</BODY>
+</HTML>

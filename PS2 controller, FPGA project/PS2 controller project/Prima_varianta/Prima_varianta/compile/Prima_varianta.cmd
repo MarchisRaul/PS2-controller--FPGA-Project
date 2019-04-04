@@ -1,0 +1,1 @@
+-w -s "d:\facultate\Programe\Prima_varianta\library.cfg"  -j "d:\facultate\Programe\Prima_varianta\Prima_varianta\projlib.cfg"  -d "d:\facultate\Programe\Prima_varianta\Prima_varianta\compile\"  -work Prima_varianta -dbg -e 100 "d:\facultate\Programe\Prima_varianta\Prima_varianta\src\Unity.vhd" 
